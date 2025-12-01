@@ -16,7 +16,7 @@ export default function Home() {
     },
     {
       title: "Jaran Goyang",
-      src: "freak.gif",
+      src: "golshi.gif",
       color: "text-black"
     },
     {
@@ -34,7 +34,7 @@ export default function Home() {
   const [modal, setModal] = useState({active: false, index: 0})
 
   return (
-    <main className="min-h-screen max-w-3xl flex flex-col justify-center items-center mx-auto">
+    <main className="min-h-screen max-w-5xl flex flex-col justify-center items-center mx-auto">
       <div className="w-full text-4xl">
         {
           groups.map( (group, index) => {
