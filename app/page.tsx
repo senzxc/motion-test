@@ -15,8 +15,8 @@ export default function Home() {
       color: "text-black"
     },
     {
-      title: "C3 Montreal",
-      src: "ryo.jpg",
+      title: "Jaran Goyang",
+      src: "freak.gif",
       color: "text-black"
     },
     {
