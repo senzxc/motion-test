@@ -6,8 +6,8 @@ import gsap from 'gsap';
 
 const scaleAnimation = {
     initial: {scale: 0, x: "-50%", y: "-50%"},
-    open: {scale: 1, x: "-50%", y: "-50%", transition: {duration: 0.4, ease: [0.76, 0, 0.24, 1]}},
-    close: {scale: 0, x: "-50%", y: "-50%", transition: {duration: 0.4, ease: [0.32, 0, 0.67, 0]}}
+    open: {scale: 1, x: "-50%", y: "-50%", transition: {duration: 0.4, ease: [0.34, 1.56, 0.64, 1]}},
+    close: {scale: 0, x: "-50%", y: "-50%", transition: {duration: 0.4, ease: [0.36, 0, 0.66, -0.56]}}
 }
 
 export default function index({
@@ -47,8 +47,8 @@ export default function index({
 
   return (
     <>
-        <motion.div ref={container} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "close"} className='h-[239px] w-[250px] flex items-center justify-center absolute overflow-hidden pointer-events-none'>
-            <div style={{top: index * -104 + "%"}} className='h-full w-full absolute transition-all ease-[cubic-bezier(0.76,0,0.24,1)] duration-500'>
+        <motion.div ref={container} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "close"} className='h-[239px] w-[250px] flex items-center justify-center absolute border-5 border-indigo-500 overflow-hidden pointer-events-none'>
+            <div style={{top: index * -104 + "%"}} className='h-full w-full absolute transition-all ease-[cubic-bezier(0.65,0,0.35,1)] duration-500'>
                 {
                     groups.map( (group, index) => {
                         const { src, color } = group;
