@@ -47,7 +47,7 @@ export default function index({
 
   return (
     <>
-        <motion.div ref={container} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "close"} className='h-[239px] w-[250px] flex items-center justify-center absolute border-5 border-indigo-500 overflow-hidden pointer-events-none'>
+        <motion.div ref={container} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "close"} className='h-[268px] w-[280px] flex items-center justify-center absolute border-5 border-(--bc) animate-borderChange overflow-hidden pointer-events-none'>
             <div style={{top: index * -104 + "%"}} className='h-full w-full absolute transition-all ease-[cubic-bezier(0.65,0,0.35,1)] duration-500'>
                 {
                     groups.map( (group, index) => {
@@ -68,7 +68,7 @@ export default function index({
                 }
             </div>
         </motion.div>
-        <motion.div ref={cursor} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "close"} className='w-15 h-15 bg-indigo-500 absolute pointer-events-none rounded-full flex items-center justify-center text-white'></motion.div>
+        <motion.div ref={cursor} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "close"} className='w-15 h-15 bg-indigo-500 absolute pointer-events-none rounded-full flex items-center justify-center text-white animate-colorChange'></motion.div>
         <motion.div ref={cursorLabel} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "close"} className='w-15 h-15 bg-transparent absolute pointer-events-none rounded-full flex items-center justify-center text-white'>View</motion.div>
     </>
   )

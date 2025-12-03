@@ -35,7 +35,7 @@ export default function Home() {
 
   const text = Array(20).fill(0).flatMap(() => [
     {
-      title: "MIGU"
+      title: "WELCOME"
     },
     {
       title: "✦"

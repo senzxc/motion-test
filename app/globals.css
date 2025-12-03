@@ -23,3 +23,35 @@ html, body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+@keyframes colorChange {
+  0% {
+    background-color: #394cff;
+  }
+  50% {
+    background-color: #8f39ff;
+  }
+  100% {
+    background: #ff39ff;
+  }
+}
+
+.animate-colorChange {
+  animation: colorChange 5s ease-in-out infinite alternate;
+}
+
+@keyframes borderChange {
+  0% {
+    --bc: #394cff;
+  }
+  50% {
+    --bc: #8f39ff;
+  }
+  100% {
+    --bc: #ff39ff;
+  }
+}
+
+.animate-borderChange {
+  animation: borderChange 5s ease-in-out infinite alternate;
+}
